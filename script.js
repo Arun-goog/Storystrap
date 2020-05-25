@@ -38,7 +38,7 @@ var regMail = /^([_a-zA-Z0-9-]+)(\.[_a-zA-Z0-9-]+)*@([a-zA-Z0-9-]+\.)+([a-zA-Z]{
 function signinPasswordcheck(inputtxt) 
 { 
     console.log(inputtxt.value);
-    var passw = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
+    var passw = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
     if(inputtxt.value.match(passw)) { 
         signinPasswordIndex = 1;
         signinWrong.style.display ="none";
@@ -133,7 +133,7 @@ function phonenumberValidate(inputtxt)
 function signupPasswordcheck01(inputtxt) 
 { 
     console.log(inputtxt.value);
-    var passw = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
+    var passw = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
     if(inputtxt.value.match(passw)) { 
         signupPasswordIndex = 1;
         cpasswordWrong.style.display ="none";
@@ -184,7 +184,7 @@ function checkPass()
 function signupPasswordcheck02(inputtxt) 
 { 
     console.log(inputtxt.value);
-    var passw = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
+    var passw = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
     if(inputtxt.value.match(passw)) { 
         signupPasswordIndex = 1;
         rpasswordWrong.style.display ="none";
